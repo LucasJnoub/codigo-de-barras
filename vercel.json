@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "python3 -m http.server 3000",
+      "use": "@now/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "http://localhost:3000/$1"
+    }
+  ]
+}
