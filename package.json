@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/maslick/koder-vanilla-js.git"
   },
+  "scripts": {
+    "start": "python3 -m http.server",
+    "build":"npm run build"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
